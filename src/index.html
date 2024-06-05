@@ -321,6 +321,7 @@ body {
 /* posters */
 .section {
   padding-top: 6rem;
+  padding-bottom: 12.1rem;
 }
 .section__h2 {
   margin-bottom: 4rem;
@@ -372,6 +373,191 @@ body {
   height: 100%;
   object-fit: cover;
   border-radius: 2rem;
+}
+.movies--btn {
+  padding-left: 0;
+  margin-bottom: 10rem;
+}
+.movies--btn::after {
+  background-image: unset;
+}
+
+.genres {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2.7rem;
+  margin-bottom: 7rem;
+}
+.genres-item {
+  text-align: center;
+  padding: 4.5rem 0;
+  border-radius: 20px;
+  padding: 4.5rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 4.4rem;
+  padding-bottom: 4.4rem;
+}
+.genres-item img {
+  display: block;
+  margin: 0 auto;
+}
+.genres-item h3 {
+  margin-top: 1.3rem;
+  font-family: "Mulish", sans-serif;
+  font-weight: 700;
+  font-size: 2.8rem;
+  line-height: 71%;
+  text-align: center;
+  color: #fff;
+}
+.genres-item__romance {
+  background: linear-gradient(136deg, #fd093f 0%, #f383f1 100%);
+}
+.genres-item__drama {
+  background: linear-gradient(143deg, #0fffda 0%, #3cdb77 100%);
+}
+.genres-item__historical {
+  background: linear-gradient(136deg, #b936ff 0%, #57deda 100%);
+}
+.genres-item__action {
+  background: linear-gradient(136deg, #fd093f 0%, #fb1378 0.01%, #fccb1a 100%);
+}
+.genres-item__sci-fi {
+  background: linear-gradient(136deg, #ff6472 0%, #fda75d 100%);
+}
+.genres-item__horror {
+  background: linear-gradient(137deg, #13547a 0%, #80d0c7 100%);
+}
+.genres-item__comedy {
+  background: linear-gradient(137deg, #fff77b 0%, #ffbf42 100%);
+}
+.genres-item__documentary {
+  background: linear-gradient(136deg, #1fa2ff 0%, #1fa2ff 0.01%, #1f535c 97.4%);
+}
+
+.actors {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  margin-bottom: 10.3rem;
+}
+.actors-item {
+  text-align: center;
+}
+.actors-item__img {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+.actors-item__title {
+  font-family: "Mulish", sans-serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 111%;
+  color: #fff;
+}
+
+.coming {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 12.1rem;
+}
+.coming-left {
+  border-radius: 2rem 0 0 2rem;
+}
+.coming-right {
+  text-align: center;
+  border-radius: 0 2rem 2rem 0;
+  box-shadow: 0 0 30px 0 rgba(255, 255, 255, 0.1);
+  background: linear-gradient(47deg, #0d1a73 29.09%, #000 70.41%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 3.1rem;
+}
+.coming-right__img {
+  display: block;
+}
+.coming-right__text {
+  font-family: "Mulish", sans-serif;
+  font-weight: 700;
+  font-size: 6.4rem;
+  line-height: 31%;
+  text-transform: capitalize;
+  color: #fff;
+}
+
+.offer {
+  max-width: 122.4rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 7.1rem 0;
+  padding-left: 5.7rem;
+  padding-right: 15.2rem;
+  background-image: url("images/offer-bg.jpg");
+  margin-bottom: 12.1rem;
+}
+.offer__btn {
+  font-family: "Mulish", sans-serif;
+  font-weight: 800;
+  font-size: 1.6rem;
+  line-height: 125%;
+  text-align: center;
+  color: #fff;
+  width: 14.1rem;
+  height: 5rem;
+  text-shadow: 17px 17px 20px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 10rem;
+  background: linear-gradient(172deg, #26fff2 0%, #326cff 100%);
+  box-shadow: 0 4px 50px 0 rgba(50, 108, 255, 0.5);
+}
+.offer__btn:hover {
+  box-shadow: 0 0 0 0 rgba(50, 108, 255, 0.5);
+}
+.offer__title {
+  font-family: "Mulish", sans-serif;
+  font-weight: 700;
+  font-size: 6.4rem;
+  line-height: 100%;
+  text-transform: capitalize;
+  color: #fff;
+  max-width: 79rem;
+}
+
+/* footer */
+.footer {
+  margin-top: auto;
+  padding-top: 7rem;
+  background: #101012;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-left: 24.5rem;
+  padding-right: 24.5rem;
+  padding-bottom: 7rem;
+  margin-bottom: 0;
+}
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+.footer-list:not(:last-child) {
+  margin-right: 5.3rem;
+}
+.footer-list__link {
+  font-family: "Mulish", sans-serif;
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 111%;
+  color: #c2c2c2;
+}
+.footer-item {
+  margin-right: 8.4rem;
 }/*# sourceMappingURL=style.css.map */
     </style>
   </head>
@@ -432,12 +618,76 @@ body {
           <div class="movies__item"><a class="movies__link" href="#!"><img class="movies__img" src="images/posters/poster-11.png" alt="11"></a></div>
           <div class="movies__item"><a class="movies__link" href="#!"><img class="movies__img" src="images/posters/poster-12.png" alt="12"></a></div>
         </div>
+        <button class="banner__control__btn banner__control__btn--main movies--btn">See more</button>
+        <h2 class="section__h2"> <a href="#!">Popular Genres ></a></h2>
+        <div class="genres"> 
+          <div class="genres-item genres-item__romance"><a class="genres-item__link" href="#!"> <img src="images/genres/romance.svg" alt="Romance">
+              <h3 class="genres__title">Romance</h3></a></div>
+          <div class="genres-item genres-item__drama"><a class="genres-item__link" href="#!"> <img src="images/genres/drama.svg" alt="Drama">
+              <h3 class="genres__title">Drama</h3></a></div>
+          <div class="genres-item genres-item__historical"><a class="genres-item__link" href="#!"> <img src="images/genres/historical.svg" alt="Historical">
+              <h3 class="genres__title">Historical</h3></a></div>
+          <div class="genres-item genres-item__action"><a class="genres-item__link" href="#!"> <img src="images/genres/action.svg" alt="Action">
+              <h3 class="genres__title">Action</h3></a></div>
+          <div class="genres-item genres-item__sci-fi"><a class="genres-item__link" href="#!"> <img src="images/genres/sci-fi.svg" alt="Sci-fi">
+              <h3 class="genres__title">Sci-fi</h3></a></div>
+          <div class="genres-item genres-item__horror"><a class="genres-item__link" href="#!"> <img src="images/genres/horror.svg" alt="Horror">
+              <h3 class="genres__title">Horror</h3></a></div>
+          <div class="genres-item genres-item__comedy"><a class="genres-item__link" href="#!"> <img src="images/genres/comedy.svg" alt="Comedy">
+              <h3 class="genres__title">Comedy</h3></a></div>
+          <div class="genres-item genres-item__documentary"><a class="genres-item__link" href="#!"> <img src="images/genres/documentary.svg" alt="Documentary">
+              <h3 class="genres__title">Documentary</h3></a></div>
+        </div>
+        <h2 class="section__h2"> <a href="#!">Popular Actors & Directors ></a></h2>
+        <div class="actors">
+          <div class="actors-item"><a class="actors-item__link" href="#!"> <img class="actors-item__img" src="images/actors/samantha.png" alt=""></a>
+            <h4 class="actors-item__title">Samantha Bowen</h4>
+          </div>
+          <div class="actors-item"><a class="actors-item__link" href="#!"> <img class="actors-item__img" src="images/actors/rhys.png" alt="">
+              <h4 class="actors-item__title">Rhys Birch</h4></a></div>
+          <div class="actors-item"><a class="actors-item__link" href="#!"> <img class="actors-item__img" src="images/actors/james.png" alt="">
+              <h4 class="actors-item__title">James Holloway</h4></a></div>
+          <div class="actors-item"><a class="actors-item__link" href="#!"> <img class="actors-item__img" src="images/actors/joshua.png" alt="">
+              <h4 class="actors-item__title">Joshua Walton</h4></a></div>
+          <div class="actors-item"><a class="actors-item__link" href="#!"> <img class="actors-item__img" src="images/actors/patrick.png" alt="">
+              <h4 class="actors-item__title">Patrick Elliott</h4></a></div>
+          <div class="actors-item"><a class="actors-item__link" href="#!"> <img class="actors-item__img" src="images/actors/morgan.png" alt="">
+              <h4 class="actors-item__title">Morgan O'Neill</h4></a></div>
+        </div>
+        <div class="coming"><img class="coming-left" src="images/coming-left.png" alt="coming">
+          <div class="coming-right"><img class="coming-right__img" src="images/2021.png" alt="2021">
+            <p class="coming-right__text">Coming Soon...</p>
+          </div>
+        </div>
+        <section class="offer">
+          <h2 class="offer__title">Are You New Here ? Don’t wait, Register Now. </h2>
+          <button class="offer__btn">Register Now</button>
+        </section>
       </div>
     </section>
-    <footer> 
-      <div class="footer">  
-        <h1>Подвал сайта</h1>
-      </div>
+    <footer class="footer">  
+      <div class="footer-item"> <a href="#!"> <img src="./images//logo.svg" alt="logo"></a></div>
+      <ul class="footer-list">
+        <li class="footer-list__item"> <a class="footer-list__link" href="#!">Voice over and Subtitle</a></li>
+        <li class="footer-list__item"> <a class="footer-list__link" href="#!">Media Center </a></li>
+        <li class="footer-list__item"> <a class="footer-list__link" href="#!">Privacy</a></li>
+        <li class="footer-list__item"> <a class="footer-list__link" href="#!">Contact us</a></li>
+      </ul>
+      <ul class="footer-list">
+        <li class="footer-list__item"> <a class="footer-list__link" href="#!">Voice Description</a></li>
+        <li class="footer-list__item"> <a class="footer-list__link" href="#!">Investor Relations</a></li>
+        <li class="footer-list__item"> <a class="footer-list__link" href="#!">Legal Provisions</a></li>
+      </ul>
+      <ul class="footer-list">
+        <li class="footer-list__item"> <a class="footer-list__link" href="#!">Help Center</a></li>
+        <li class="footer-list__item"> <a class="footer-list__link" href="#!">Job Opportunities </a></li>
+        <li class="footer-list__item"> <a class="footer-list__link" href="#!">Cookies Preferences</a></li>
+      </ul>
+      <ul class="footer-list">
+        <li class="footer-list__item"> <a class="footer-list__link" href="#!">Gift Cards</a></li>
+        <li class="footer-list__item"> <a class="footer-list__link" href="#!">Terms of Use</a></li>
+        <li class="footer-list__item"> <a class="footer-list__link" href="#!">Corporate Informations</a></li>
+      </ul>
     </footer>
   </body>
 </html>
