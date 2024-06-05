@@ -2,15 +2,203 @@
 <html lang="en">
   <head>
     <title>Online TV</title>
-    <style>body {
-  background-color: aquamarine;
+    <style>/* Reset and base styles  */
+@import url("https://fonts.googleapis.com/css2?family=Lemon&family=Marcellus&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Links */
+a, a:link, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Common */
+aside, nav, footer, header, section, main {
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul, ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img, svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+input, textarea, button, select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button, input[type=submit] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: #000000;
+  color: #fff;
+  font-size: 16px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  max-width: 141rem;
+  padding: 1.5rem 0;
+  margin: 0 auto;
+  align-items: center;
+  padding-top: 1.5rem;
+  padding-bottom: 1.4rem;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 5.4rem;
+}
+.nav-link {
+  opacity: 0.5;
+  font-family: "Mulish", sans-serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 125%;
+  text-align: center;
+  color: #fff;
+}
+.nav .active {
+  opacity: 1;
+  font-family: "Mulish", sans-serif;
+  font-weight: 800;
+  font-size: 1.6rem;
+  line-height: 125%;
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+.nav .active::after {
+  content: "";
+  position: absolute;
+  display: block;
+  margin-top: 0.5rem;
+  width: 100%;
+  border-radius: 5rem;
+  width: 4.6rem;
+  height: 0.2rem;
+  background: linear-gradient(172deg, #26fff2 0%, #326cff 100%);
+}
+
+.control {
+  display: flex;
+  align-items: center;
+  gap: 7.5rem;
+}
+.control-btn {
+  background-color: transparent;
+}
+.control-btn__search {
+  background-image: url("images/search.svg");
+  width: 1.8rem;
+  height: 1.8rem;
+}
+.control-btn__search {
+  background-image: url("images/search.svg");
+  width: 1.8rem;
+  height: 1.8rem;
+}
+.control-btn__notice {
+  background-image: url("images/notice.svg");
+  width: 2.1rem;
+  height: 2.3rem;
+}
+.control-btn__account {
+  background-image: url("images/account.svg");
+  width: 1.8rem;
+  height: 1.9rem;
 }/*# sourceMappingURL=style.css.map */
     </style>
   </head>
   <body> 
     <header> 
-      <div class="header">
-        <h1>Шапка сайта</h1>
+      <div class="header"><a href="#!"> <img src="images/logo.svg" alt="Logo"></a>
+        <nav> 
+          <ul class="nav">
+            <li class="nav-item"><a class="nav-link active" href="#!">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#!">TV Shows</a></li>
+            <li class="nav-item"><a class="nav-link" href="#!">Movies</a></li>
+            <li class="nav-item"><a class="nav-link" href="#!">Series</a></li>
+          </ul>
+        </nav>
+        <ul class="control">
+          <li class="control-item"> 
+            <button class="control-btn control-btn__search"></button>
+          </li>
+          <li class="control-item"> 
+            <button class="control-btn control-btn__notice"></button>
+          </li>
+          <li class="control-item"> 
+            <button class="control-btn control-btn__account"></button>
+          </li>
+        </ul>
       </div>
     </header>
     <h1>Pug - node template engine</h1>
