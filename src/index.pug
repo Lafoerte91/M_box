@@ -8,5 +8,20 @@ html(lang="en")
       include ../css/style.css
   body 
     include modules/header
-    h1 Pug - node template engine
+    
+    section.banner__wrapper
+      img(src="images/banner.png", alt="banner").banner__wrapper__image
+      .container
+        .banner 
+          h1.banner__title Zack Snyder's Justice League
+          .banner__info
+            span.banner__info-year 2021
+            span.banner__info-age 18+
+            span.banner__info-time 4h 2min
+            span.banner__info-rating 8.8
+          p.banner__text Determined to ensure Superman's ultimate sacrifice was not in vain, Bruce Wayne aligns forces with Diana Prince with plans to recruit a team of metahumans to protect the world from an approaching threat of catastrophic proportions.
+          .banner__control
+            button.banner__control__btn.banner__control__btn--main Watch
+            button.banner__control__btn.banner__control__btn--more More information
+
     include modules/footer
