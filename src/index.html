@@ -316,6 +316,62 @@ body {
 .banner__control__btn--more:hover {
   color: #FFFFFF;
   background-color: transparent;
+}
+
+/* posters */
+.section {
+  padding-top: 6rem;
+}
+.section__h2 {
+  margin-bottom: 4rem;
+}
+.section__h2 a {
+  font-family: "Mulish", sans-serif;
+  font-weight: 700;
+  font-size: 2.8rem;
+  line-height: 71%;
+  color: #fff;
+  position: relative;
+  position: relative;
+  padding-left: 1.9rem;
+}
+.section__h2 a::before {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 100%;
+  border-radius: 5rem;
+  height: 3.5rem;
+  width: 0.8rem;
+  top: 0;
+  left: 0;
+  background: linear-gradient(172deg, #26fff2 0%, #326cff 100%);
+}
+
+.movies {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4.1rem;
+  width: 100%;
+  margin-bottom: 6rem;
+}
+.movies:last-child {
+  margin-bottom: 5.5rem;
+}
+.movies__item {
+  width: 20.6rem;
+  height: 30.9rem;
+  transition: 0.2s ease box-shadow;
+  border-radius: 2rem;
+}
+.movies__item:hover {
+  box-shadow: 0 0 20px 0 rgba(44, 176, 249, 0.5);
+}
+.movies__img {
+  height: 100%;
+  object-fit: cover;
+  border-radius: 2rem;
 }/*# sourceMappingURL=style.css.map */
     </style>
   </head>
@@ -353,6 +409,28 @@ body {
             <button class="banner__control__btn banner__control__btn--main">Watch</button>
             <button class="banner__control__btn banner__control__btn--more">More information</button>
           </div>
+        </div>
+      </div>
+    </section>
+    <section class="section"> 
+      <div class="container">
+        <h2 class="section__h2"> <a href="#!">Trending TV Shows ></a></h2>
+        <div class="movies"> 
+          <div class="movies__item"><a class="movies__link" href="#!"><img class="movies__img" src="images/posters/poster-01.png" alt="01"></a></div>
+          <div class="movies__item"><a class="movies__link" href="#!"><img class="movies__img" src="images/posters/poster-02.png" alt="02"></a></div>
+          <div class="movies__item"><a class="movies__link" href="#!"><img class="movies__img" src="images/posters/poster-03.png" alt="03"></a></div>
+          <div class="movies__item"><a class="movies__link" href="#!"><img class="movies__img" src="images/posters/poster-04.png" alt="04"></a></div>
+          <div class="movies__item"><a class="movies__link" href="#!"><img class="movies__img" src="images/posters/poster-05.png" alt="05"></a></div>
+          <div class="movies__item"><a class="movies__link" href="#!"><img class="movies__img" src="images/posters/poster-06.png" alt="06"></a></div>
+        </div>
+        <h2 class="section__h2"> <a href="#!">Trending Movies ></a></h2>
+        <div class="movies"> 
+          <div class="movies__item"><a class="movies__link" href="#!"><img class="movies__img" src="images/posters/poster-07.png" alt="07"></a></div>
+          <div class="movies__item"><a class="movies__link" href="#!"><img class="movies__img" src="images/posters/poster-08.png" alt="08"></a></div>
+          <div class="movies__item"><a class="movies__link" href="#!"><img class="movies__img" src="images/posters/poster-09.png" alt="09"></a></div>
+          <div class="movies__item"><a class="movies__link" href="#!"><img class="movies__img" src="images/posters/poster-10.png" alt="10"></a></div>
+          <div class="movies__item"><a class="movies__link" href="#!"><img class="movies__img" src="images/posters/poster-11.png" alt="11"></a></div>
+          <div class="movies__item"><a class="movies__link" href="#!"><img class="movies__img" src="images/posters/poster-12.png" alt="12"></a></div>
         </div>
       </div>
     </section>

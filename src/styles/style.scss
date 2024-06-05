@@ -232,3 +232,59 @@ body {
   }
 }
 
+
+/* posters */
+.section {
+  padding-top: 6rem;
+  &__h2 {
+    margin-bottom: 4rem;
+  }
+  &__h2 a {
+    font-family: $font-family;
+    font-weight: 700;
+    font-size: 2.8rem;
+    line-height: 71%;
+    color: #fff;
+    position: relative;
+    position: relative;
+    padding-left: 1.9rem;
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      height: 100%;
+      border-radius: 5rem;
+      height: 3.5rem;
+      width: 0.8rem;
+      top: 0;
+      left: 0;
+      background: linear-gradient(172deg, #26fff2 0%, #326cff 100%);
+    }
+  }
+}
+
+.movies {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4.1rem;
+  width: 100%;
+  margin-bottom: 6rem;
+  &:last-child {
+    margin-bottom: 5.5rem;
+  }
+  &__item {
+    width: 20.6rem;
+    height: 30.9rem;
+    transition: .2s ease box-shadow;
+    border-radius: 2rem;
+    &:hover {
+      box-shadow: 0 0 20px 0 rgba(44, 176, 249, 0.5);
+    }
+  } 
+  &__img {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2rem;
+  }
+}
